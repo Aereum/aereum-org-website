@@ -11,10 +11,9 @@ module.exports = {
       'tc6': '#bbe7fe',
       'bc0': '#1572A1',
     },
-    fill: ({theme}) => ({
-      bg: theme('colors.bc0')
-
-    }),
+    // fill: ({theme}) => ({
+    //   bg: theme('colors.bc0')
+    // }),
     fontFamily: {
       'sans': ['ui-sans-serif'],
       'mono':['SFMono-Regular'],
