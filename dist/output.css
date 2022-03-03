@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.0.18 | MIT License | https://tailwindcss.com
+! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: currentColor;
+  border-color: #e5e7eb;
   /* 2 */
 }
 
@@ -42,7 +42,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
 }
 
@@ -123,7 +123,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: SFMono-Regular;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -491,6 +491,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 0;
 }
 
+.col-span-5 {
+  grid-column: span 5 / span 5;
+}
+
+.col-span-7 {
+  grid-column: span 7 / span 7;
+}
+
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
+
+.col-span-6 {
+  grid-column: span 6 / span 6;
+}
+
+.col-span-4 {
+  grid-column: span 4 / span 4;
+}
+
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -499,12 +523,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-column: span 8 / span 8;
 }
 
-.col-span-4 {
-  grid-column: span 4 / span 4;
+.col-start-1 {
+  grid-column-start: 1;
 }
 
 .col-start-6 {
   grid-column-start: 6;
+}
+
+.col-start-9 {
+  grid-column-start: 9;
+}
+
+.col-start-5 {
+  grid-column-start: 5;
 }
 
 .col-start-7 {
@@ -515,20 +547,52 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-column-start: 8;
 }
 
-.col-start-9 {
-  grid-column-start: 9;
+.row-span-6 {
+  grid-row: span 6 / span 6;
 }
 
-.col-start-1 {
-  grid-column-start: 1;
+.row-span-3 {
+  grid-row: span 3 / span 3;
+}
+
+.row-span-2 {
+  grid-row: span 2 / span 2;
 }
 
 .row-span-5 {
   grid-row: span 5 / span 5;
 }
 
+.row-start-1 {
+  grid-row-start: 1;
+}
+
+.row-start-6 {
+  grid-row-start: 6;
+}
+
+.row-start-7 {
+  grid-row-start: 7;
+}
+
+.row-start-10 {
+  grid-row-start: 10;
+}
+
+.row-start-3 {
+  grid-row-start: 3;
+}
+
 .row-start-4 {
   grid-row-start: 4;
+}
+
+.row-start-11 {
+  grid-row-start: 11;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .mt-7 {
@@ -547,10 +611,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 1.75rem;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -567,12 +627,52 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: contents;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
+.h-48 {
+  height: 12rem;
+}
+
+.h-full {
+  height: 100%;
+}
+
 .h-screen {
   height: 100vh;
 }
 
+.w-11\/12 {
+  width: 91.666667%;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
 .w-auto {
   width: auto;
+}
+
+.max-w-5xl {
+  max-width: 64rem;
+}
+
+.basis-2\/5 {
+  flex-basis: 40%;
+}
+
+.basis-3\/5 {
+  flex-basis: 60%;
+}
+
+.grid-cols-12 {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
 .grid-cols-10 {
@@ -581,6 +681,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-rows-12 {
+  grid-template-rows: repeat(12, minmax(0, 1fr));
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .place-content-center {
@@ -611,30 +719,45 @@ Ensure the default browser behavior of the `hidden` attribute.
   overflow: hidden;
 }
 
+.overflow-y-clip {
+  overflow-y: clip;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
 
-.bg-bc0 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(21 114 161 / var(--tw-bg-opacity));
+.border {
+  border-width: 1px;
 }
 
-.bg-tc0 {
+.bg-red-400 {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 190 11 / var(--tw-bg-opacity));
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-100 {
   --tw-bg-opacity: 1;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .p-5 {
   padding: 1.25rem;
 }
 
+.font-sans {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 .font-serif {
-  font-family: Georgia;
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .text-2xl {
@@ -649,16 +772,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-7xl {
   font-size: 4.5rem;
-  line-height: 1;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
-.text-8xl {
-  font-size: 6rem;
   line-height: 1;
 }
 
@@ -677,33 +790,27 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.25rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
 .font-bold {
   font-weight: 700;
 }
 
-.text-tc1 {
+.text-white {
   --tw-text-opacity: 1;
-  color: rgb(251 86 7 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-tc0 {
+.text-black {
   --tw-text-opacity: 1;
-  color: rgb(255 190 11 / var(--tw-text-opacity));
-}
-
-.text-tc2 {
-  --tw-text-opacity: 1;
-  color: rgb(255 0 110 / var(--tw-text-opacity));
-}
-
-.text-tc4 {
-  --tw-text-opacity: 1;
-  color: rgb(58 134 255 / var(--tw-text-opacity));
-}
-
-.text-tc3 {
-  --tw-text-opacity: 1;
-  color: rgb(131 56 236 / var(--tw-text-opacity));
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .overline {
@@ -730,20 +837,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
-.ring-tc1 {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(251 86 7 / var(--tw-ring-opacity));
-}
-
-.ring-tc4 {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(58 134 255 / var(--tw-ring-opacity));
-}
-
 .ring-offset-8 {
   --tw-ring-offset-width: 8px;
-}
-
-.ring-offset-bc0 {
-  --tw-ring-offset-color: #1572A1;
 }
