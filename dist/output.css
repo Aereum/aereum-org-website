@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
+! tailwindcss v3.0.18 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -487,14 +487,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 0px;
 }
 
-.top-\[-30px\] {
-  top: -30px;
-}
-
-.left-0 {
-  left: 0px;
-}
-
 .z-10 {
   z-index: 10;
 }
@@ -559,10 +551,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-column-start: 8;
 }
 
-.col-start-3 {
-  grid-column-start: 3;
-}
-
 .col-start-4 {
   grid-column-start: 4;
 }
@@ -571,8 +559,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-column-start: 11;
 }
 
+.col-start-3 {
+  grid-column-start: 3;
+}
+
 .col-start-2 {
   grid-column-start: 2;
+}
+
+.col-start-13 {
+  grid-column-start: 13;
+}
+
+.col-start-10 {
+  grid-column-start: 10;
 }
 
 .row-span-6 {
@@ -631,14 +631,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-row-start: 5;
 }
 
-.row-start-8 {
-  grid-row-start: 8;
-}
-
-.m-2 {
-  margin: 0.5rem;
-}
-
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -695,28 +687,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100%;
 }
 
-.h-60 {
-  height: 15rem;
-}
-
 .h-screen {
   height: 100vh;
 }
 
+.h-60 {
+  height: 15rem;
+}
+
 .h-72 {
   height: 18rem;
-}
-
-.h-24 {
-  height: 6rem;
-}
-
-.h-36 {
-  height: 9rem;
-}
-
-.h-12 {
-  height: 3rem;
 }
 
 .w-11\/12 {
@@ -729,10 +709,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-full {
   width: 100%;
-}
-
-.w-16 {
-  width: 4rem;
 }
 
 .w-auto {
@@ -767,10 +743,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-template-rows: repeat(12, minmax(0, 1fr));
 }
 
-.grid-rows-2 {
-  grid-template-rows: repeat(2, minmax(0, 1fr));
-}
-
 .grid-rows-6 {
   grid-template-rows: repeat(6, minmax(0, 1fr));
 }
@@ -785,10 +757,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .place-items-center {
   place-items: center;
-}
-
-.content-center {
-  align-content: center;
 }
 
 .items-start {
@@ -836,6 +804,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(248 113 113 / var(--tw-bg-opacity));
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-100 {
   --tw-bg-opacity: 1;
 }
@@ -846,10 +819,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .p-5 {
   padding: 1.25rem;
-}
-
-.pl-2 {
-  padding-left: 0.5rem;
 }
 
 .font-sans {
@@ -911,6 +880,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-red-600 {
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity));
+}
+
+.text-green-500 {
+  --tw-text-opacity: 1;
+  color: rgb(34 197 94 / var(--tw-text-opacity));
+}
+
+.text-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.text-pink-500 {
+  --tw-text-opacity: 1;
+  color: rgb(236 72 153 / var(--tw-text-opacity));
 }
 
 .overline {
