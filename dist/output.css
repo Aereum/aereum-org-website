@@ -563,6 +563,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: grid;
 }
 
+.contents {
+  display: contents;
+}
+
 .h-screen {
   height: 100vh;
 }
@@ -618,7 +622,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-tc0 {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 194 199 / var(--tw-bg-opacity));
+  background-color: rgb(255 190 11 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-100 {
@@ -648,28 +652,58 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
 
 .text-tc1 {
   --tw-text-opacity: 1;
-  color: rgb(182 229 216 / var(--tw-text-opacity));
+  color: rgb(251 86 7 / var(--tw-text-opacity));
 }
 
 .text-tc0 {
   --tw-text-opacity: 1;
-  color: rgb(255 194 199 / var(--tw-text-opacity));
+  color: rgb(255 190 11 / var(--tw-text-opacity));
 }
 
 .text-tc2 {
   --tw-text-opacity: 1;
-  color: rgb(251 229 200 / var(--tw-text-opacity));
+  color: rgb(255 0 110 / var(--tw-text-opacity));
 }
 
 .text-tc4 {
   --tw-text-opacity: 1;
-  color: rgb(211 187 221 / var(--tw-text-opacity));
+  color: rgb(58 134 255 / var(--tw-text-opacity));
+}
+
+.text-tc3 {
+  --tw-text-opacity: 1;
+  color: rgb(131 56 236 / var(--tw-text-opacity));
 }
 
 .overline {
@@ -698,12 +732,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .ring-tc1 {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(182 229 216 / var(--tw-ring-opacity));
+  --tw-ring-color: rgb(251 86 7 / var(--tw-ring-opacity));
 }
 
 .ring-tc4 {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(211 187 221 / var(--tw-ring-opacity));
+  --tw-ring-color: rgb(58 134 255 / var(--tw-ring-opacity));
 }
 
 .ring-offset-8 {

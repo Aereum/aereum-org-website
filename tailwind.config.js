@@ -2,11 +2,11 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     colors: {
-      'tc0': '#ffc2c7', // textcolors
-      'tc1': '#b6e5d8',
-      'tc2': '#fbe5c8',
-      'tc3': '#8fdde7',
-      'tc4': '#d3bbdd',
+      'tc0': '#ffbe0b', // textcolors
+      'tc1': '#fb5607',
+      'tc2': '#ff006e',
+      'tc3': '#8338ec',
+      'tc4': '#3a86ff',
       'tc5': '#efe7d3',
       'tc6': '#bbe7fe',
       'bc0': '#1572A1',
