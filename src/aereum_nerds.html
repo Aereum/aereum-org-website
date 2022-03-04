@@ -289,16 +289,19 @@
             a dedicated <strong>fungible token</strong>. 
             </h1>
 
-            <h1 class="text-green-500 text-1xl pt-10">
-                [1] protocol 
-            </h1>
+            <input type="checkbox" class="accordion" id="1"/>
+            <label for="1" class="accordion">
+                <h1 class="text-green-500 text-1xl pt-10">
+                    [1] protocol 
+                </h1>
+            </label>    
 
+            <div class="comment">
             <h1 class="text-green-500 text-1xl">
                 Direct digital interaction between humans is 
             possible if both a public identification mechanism for members, and a decentralized
             communication mean are provided.
             </h1>
-
             <h1 class="text-green-500 text-1xl">
                 Aereum proposes that members are uniquely identified by the public key of an asymmetric cryptographic pair, and 
                 a unique handle "@user_name". Valid <strong>cryptographic</strong> signature checked against the
@@ -321,9 +324,13 @@
                 shuffle of keys for stage managing, and sponsorship 
                 proposals and acceptances.
             </h1>
-                
-            <h1 class="text-green-500 text-1xl pt-10">[2] network</a>
-                
+        </div>
+            
+        <input type="checkbox" class="accordion" id="2"/>
+            <label for="2" class="accordion">
+                <h1 class="text-green-500 text-1xl pt-10">[2] network</h1>
+            </label>
+            <div class="comment">
             <h1 class="text-green-500 text-1xl">
                 Aereum network runs on top of its namasaked protocol, enabling the
                 use of the Aereum protocol by the participants. To meet communication
@@ -356,9 +363,12 @@
                 is required to publish a proof of state checksum to all peers on a regular basis.
                 Only nodes providing the correct proof remain valid, until next check, and so on.
             </h1>
-        
+        </div>    
+        <input type="checkbox" class="accordion" id="3"/>
+            <label for="3" class="accordion">
             <h1 class="text-green-500 text-1xl pt-10">[3] cryptography</h1>
-                
+            </label>
+            <div class="comment">
             <h1 class="text-green-500 text-1xl">
                 Cryptography technics adopted by the protocol and network. 
             </h1>
@@ -388,9 +398,13 @@
                 exchange <strong>stage's</strong> keys for content access, and for 
                 moderation or writing privileges.
             </h1>        
-                 
+        </div>                
+        <input type="checkbox" class="accordion" id="5"/>
+        <label for="5" class="accordion">
             <h1 class="text-green-500 text-1xl pt-10">[4] members</h1>
-                
+        </label>
+        <div class="comment">
+
             <h1 class="text-green-500 text-1xl">
                 New participants must generate an asymmetric
                 <strong>cryptographic</strong> pair of keys. To join the
@@ -444,9 +458,13 @@
                 the respective cryptographic key will be exchanged using the
                 <strong>Diffie-Hellman</strong> algorithm.
             </h1>
+        </div>
+        <input type="checkbox" class="accordion" id="6"/>
+        <label for="6" class="accordion">
         
             <h1 class="text-green-500 text-1xl pt-10">[6] ephemeral tokens</h1>
-                
+        </label>
+        <div class="comment">
             <h1 class="text-green-500 text-1xl">
                 To provide a primitive for secure communication within
                 the network, the protocol proposes an instruction for the
@@ -467,9 +485,12 @@
                 Anonymity is guaranteed up to the anonymity
                 of the wallets used for payment of the instructions <strong>fees</strong>.
             </h1>
-        
+        </div>
+            <input type="checkbox" class="accordion" id="7"/>
+            <label for="7" class="accordion">
             <h1 class="text-green-500 text-1xl pt-10">[7] fungible token</h1>
-                
+            </label>
+            <div class="comment">
             <h1 class="text-green-500 text-1xl">
                 As a reward to <strong>network</strong> nodes for the processing,
                 validating and broadcasting of information, the
@@ -484,9 +505,13 @@
                 sent to the network require an amount of aero
                 to be waived by the sender. This fee is also granted to network nodes. 
             </h1>
-        
+            </div>
+            <input type="checkbox" class="accordion" id="8"/>
+            <label for="8" class="accordion">
+           
             <h1 class="text-green-500 text-1xl pt-10">[8] instructions</h1>
-                
+            </label>
+            <div class="comment">
             <h1 class="text-green-500 text-1xl">
                 Join Network: Includes a new member to the network, assigning a unique handle to its public key
             </h1>
@@ -541,9 +566,13 @@
             <h1 class="text-green-500 text-1xl">
                 Secure Channel: Creates a secure channel for communication between members
             </h1>
+        </div>
+        <input type="checkbox" class="accordion" id="9"/>
+        <label for="9" class="accordion">
         
             <h1 class="text-green-500 text-1xl pt-10">[9] consensus algorithm</h1>
-                
+        </label>
+        <div class="comment">
             <h1 class="text-green-500 text-1xl">
                 To balance network requirements, the protocol proposes an 
                 original proof-of-stake with state checksum as its consensus algorithm.
@@ -564,9 +593,13 @@
                 interest parties. Nodes are rewarded with newly 
                 minted aero and fee collection.
             </h1>
+        </div>
+        <input type="checkbox" class="accordion" id="10"/>
+        <label for="10" class="accordion">
         
             <h1 class="text-green-500 text-1xl pt-10">[10] blocks</h1>
-                
+        </label>
+        <div class="comment">
             <h1 class="text-green-500 text-1xl">
                 The network nodes, already <strong>state</strong> syncronized,
                 receive new instructions that must be ordered into
@@ -588,9 +621,14 @@
                 should agree on the content of a new proposed
                 block before it is incorporated by the blockchain.
             </h1>
+        </div>
+        <input type="checkbox" class="accordion" id="11"/>
+        <label for="11" class="accordion">
         
-            <h1 class="text-green-500 text-1xl pt-10">[11] network state</a>
-                
+            <h1 class="text-green-500 text-1xl pt-10">[11] network state</h1>
+        </label>
+        <div class="comment">
+
             <h1 class="text-green-500 text-1xl">
                 At any block the state of the network is given by:
             </h1>
@@ -622,7 +660,9 @@
                 of correct checksum for the current state in
                 order to remain in the validating pool. 
             </h1>
-
+            </h1>
+        </div>
+                    
         </div>
     </div>    
     
