@@ -22,7 +22,7 @@ label.accordion:hover {
 }
 
 .comment {
-    padding-left: 10px;
+    padding-left: 0px;
 }
 
 input.accordion + label.accordion + .comment {
