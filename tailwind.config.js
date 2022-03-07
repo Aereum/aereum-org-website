@@ -2,6 +2,10 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      
+      fontFamily: {
+        'firacode': ['Fira Code', 'monospace'],
+      },
       gridRowStart: {
         '8': '8',
         '9': '9',
