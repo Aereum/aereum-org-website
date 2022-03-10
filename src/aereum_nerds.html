@@ -4,10 +4,6 @@
 <head>
     <title>Aereum</title>
     <meta charset="UTF-8">
-<!--     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap" rel="stylesheet"> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,13 +33,13 @@
     </div>
 
     <div class="flex justify-center">
-        <div class="bg-white w-[1000px]">
+        <div class="bg-amber-100 w-[1000px]">
 
-            <div id="logo" class="flex flex-col items-center">
-                <h1 class="text-4xl mb-8"> Make the Internet </h1>
+            <div id="logo" class="flex flex-col items-center pt-20">
+                <h1 class="text-5xl mb-8 font-bold text-red-400"> Make the internet </h1>
                 <div id="game-board"></div> 
-                <h1 class="text-4xl mt-8 mb-8">again.</h1>
-                <button id="startgame" onclick="initBoard();"> solve </button>
+                <h1 class="text-5xl mt-8 mb-8 font-bold text-red-400">again!</h1>
+                <button id="startgame" onclick="initBoard();"> <span class="font-bold">Solve</span> </button>
                 <div id="keyboard-show" class="keyboard-hidden">
                     
                     <div id="keyboard-cont">
@@ -83,11 +79,12 @@
                         </div>
                     </div>
                 </div>
-        
             </div>
-        
-
-
+        </div>
+    </div>
+    
+    <div class="flex justify-center">
+        <div class="bg-white w-[1000px] pt-16">
             <div class="grid grid-cols-3 gap-4">
                 <div class="col-start-1 col-span-1 pt-6 pl-4">
                     <h1 class="text-sm text-gray-700">We are crypto enthusiasts that, in the spirit of Satoshi Nakamoto, believe in <span class="font-bold">freeing digital interactions</span> from third parties interface dependency</h1>
@@ -98,12 +95,7 @@
                 <div class="col-start-3 col-span-1  pt-6 pl-4">
                     <h1 class="text-sm text-gray-700">We have a functioning network built on top of that agreement, the first decentralized crypto powered <span class="font-bold">digital venue for people</span></h1>
                 </div>
-            </div>    
-        </div>
-    </div>
-    
-    <div class="flex justify-center">
-        <div class="bg-white w-[1000px] pt-16">
+            </div>
             
             <div class="w-full bg-red-400 mt-6 mb-6 p-5">
                 <h1 class="text-white text-xl"> 
@@ -245,7 +237,7 @@
                 </div>
 
 
-            <div class="grid grid-cols-12 grid-rows-12 mt-2 h-[600px]">
+            <div class="grid grid-cols-12 grid-rows-12 mt-2 h-[500px]">
                 <div class="col-start-1 col-span-4 row-start-2 row-span-5 overflow-y-clip">      
                     <img  class="object-cover" src="../dist/talk.png"/>
                 </div>
@@ -273,13 +265,13 @@
                         ...speak </div>
                     </div>
                 </div>
-                <div class="col-start-11 col-span-2 row-start-3 row-span-1overflow-y-clip">
+                <div class="col-start-12 col-span-2 row-start-2 row-span-1overflow-y-clip">
                     <div class="h-full flex items-center">
                     <div class="font-sans text-white bg-red-400 rounded-lg p-2 text-sm"> 
                         ...share </div>
                     </div>
                 </div>
-                <div class="col-start-3 col-span-2 row-start-3 row-span-1overflow-y-clip">
+                <div class="col-start-3 col-span-2 row-start-4 row-span-1overflow-y-clip">
                     <div class="h-full flex items-center">
                     <div class="font-sans text-white bg-red-400 rounded-lg p-3 text-sm"> 
                         and people talk... </div>
@@ -288,7 +280,7 @@
                 <div class="col-start-4 col-span-2 row-start-7 row-span-1 overflow-y-clip">
                     <div class="h-full flex items-center">
                     <div class="font-sans text-white bg-red-400 rounded-lg p-3 text-sm"> 
-                        teach and learn. </div>
+                        ...teach and learn</div>
                     </div>
                 </div>
                 
@@ -330,7 +322,7 @@
                 </div>
                 </div>
                 <div class="w-full mt-8 mb-8 text-gray-700">
-                    <h1>
+                    <h1 class="pb-10">
                 <span class="font-bold">The protocol enpowers you</span> to take your stage online and be seen by the audience that chose to follow you without the intermediary to dictate rules for content format and distribution. Without having to adapt your interaction to your interface!
                     </h1>    
                 </div>
@@ -356,7 +348,7 @@
 
         <div class="w-full bg-green-500 mt-6 mb-6 p-6">
             <h1 class="text-white text-xl"> 
-                Cryptography technics power protocol rules. An original consensus algorithm ensures the requirements for a such social network to function. (...)
+                <span class="font-bold">Cryptography</span> technics power protocol rules. An <span class="font-bold">original consensus algorithm</span> ensures the requirements for a the social network to function smoothly.
             </h1>
         </div>
 
@@ -367,7 +359,7 @@
         <pre>
         <div  class="relative flex flex-row flex-col justify-center bg-neutral-700 m-8 rounded-lg pb-4">
             
-            <h2 class="text-slate-500 w-full border-b pt-1 pb-1 pl-4 mb-4"> ⬤ ⬤ ⬤ <span class="font-bold text-slate-200">aereumOverview_v4 </span></h2>
+            <h2 class="text-slate-500 w-full border-b pt-1 pb-1 pl-4 mb-4"> ⬤ ⬤ ⬤ <span class="font-bold text-xl text-slate-200">aereumOverview_v4 </span></h2>
 
             <h1 class="text-slate-300 text-1xl font-firacode text-red-200">''</h1>
             <h1 class="text-slate-300 text-1xl font-firacode text-red-200">Aereum is a <span class="text-green-200">protocol</span> designed to enable mediation-free communication on the web,</h1>
