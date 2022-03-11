@@ -68,8 +68,8 @@ pre h1:before {
 }
 
 .letter-box {
-    border: 2px solid gray;
-    border-radius: 3px;
+    border: 1px solid gray;
+    border-radius: 0px;
     margin: 2px;
     font-size: 2.5rem;
     font-weight: 700;
@@ -80,8 +80,6 @@ pre h1:before {
     align-items: center;
     text-transform: uppercase;
 }
-
-
 
 .filled-box {
     border: 2px solid black;

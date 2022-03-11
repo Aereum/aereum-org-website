@@ -8,7 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Gorditas&display=swap" rel="stylesheet"> 
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../dist/output.css">
 </head>
 <body class="bg-gray-900 w-full">
@@ -33,13 +35,22 @@
     </div>
 
     <div class="flex justify-center">
-        <div class="bg-amber-100 w-[1000px]">
+        <div class="bg-amber-50 w-[1000px]">
 
             <div id="logo" class="flex flex-col items-center pt-20">
-                <h1 class="text-5xl mb-8 font-bold text-red-400"> Make the internet </h1>
-                <div id="game-board"></div> 
-                <h1 class="text-5xl mt-8 mb-8 font-bold text-red-400">again!</h1>
-                <button id="startgame" onclick="initBoard();"> <span class="font-bold">Solve</span> </button>
+                <h1 class="text-5xl text-red-400 pb-8" style="font-family:'Fredericka the Great';"> Make the internet </h1>
+                <div>
+                <div class="flex flex-row w-full">
+                    <div class="w-[100px]">
+                    </div>
+                    <div  id="game-board">
+                    </div> 
+                    <div class="w-[100px]">
+                        <h3 class="bg-amber-300 p-1 mt-1 ml-4 w-fit" id="startgame" onclick="initBoard();"> <span class="font-bold">Solve</span> </h3>
+                    </div>
+                </div>
+            </div>
+                <h1 class="text-5xl mt-8 mb-8 text-red-400" style="font-family:'Fredericka the Great';">again!</h1>
                 <div id="keyboard-show" class="keyboard-hidden">
                     
                     <div id="keyboard-cont">
@@ -79,21 +90,32 @@
                         </div>
                     </div>
                 </div>
+                <h3 class="bg-sky-500 text-2xl m-8 pt-2 pb-2 pl-4 pr-4 rounded-2xl text-white">Join <span class="font-bold">Aereum</span> network</h3>
             </div>
         </div>
     </div>
     
     <div class="flex justify-center">
-        <div class="bg-white w-[1000px] pt-16">
-            <div class="grid grid-cols-3 gap-4">
-                <div class="col-start-1 col-span-1 pt-6 pl-4">
-                    <h1 class="text-sm text-gray-700">We are crypto enthusiasts that, in the spirit of Satoshi Nakamoto, believe in <span class="font-bold">freeing digital interactions</span> from third parties interface dependency</h1>
+        <div class="bg-white w-[1000px] pt-8">
+            <div class="w-full grid grid-cols-3 gap-4 pl-8 pr-8">
+                <div class="col-start-1 col-span-1">
+                    <div class="flex flex-col w-full">
+                        <img class="w-full" src="satoshi.png">
+                        <h1 class="text-sm text-gray-700 p-3">We are crypto enthusiasts that, in the spirit of Satoshi Nakamoto, believe in <span class="font-bold">freeing digital interactions</span> from third parties interface dependency</h1>
+                    </div>
+                    
                 </div>
-                <div class="col-start-2 col-span-1 pt-6 pl-4">
-                    <h1 class="text-sm text-gray-700">We propose a new digital agreement so that people can <span class="font-bold">interact freely</span>, no single provider in charge of content distribution and format</h1>
+                <div class="col-start-2 col-span-1">
+                    <div class="flex flex-col w-full">
+                        <img class="w-full" src="party.png">
+                        <h1 class="text-sm text-gray-700 p-3">We propose a new digital agreement so that people can <span class="font-bold">interact freely</span>, no single provider in charge of content distribution and format</h1>
+                    </div>
                 </div>
-                <div class="col-start-3 col-span-1  pt-6 pl-4">
-                    <h1 class="text-sm text-gray-700">We have a functioning network built on top of that agreement, the first decentralized crypto powered <span class="font-bold">digital venue for people</span></h1>
+                <div class="col-start-3 col-span-1">
+                    <div class="flex flex-col w-full">
+                        <img class="w-full" src="hands.png">
+                        <h1 class="text-sm text-gray-700 p-3">We have a functioning network built on top of that agreement, the first decentralized crypto powered <span class="font-bold">digital venue for people</span></h1>
+                    </div>
                 </div>
             </div>
             
@@ -647,7 +669,23 @@
             <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;checksum for the current state in order to remain in the validating pool.</h1>
             <h1 class="text-slate-300 text-1xl font-firacode"></h1>
         </div>
-    </pre>    
+        </pre>    
+        </div>
+        <div class="h-[300px] p-8">
+            <div class="grid grid-cols-4">
+                <div>
+                    <p class="font-bold">Introduction:</p>                   
+                </div>
+                <div>
+                    <p class="font-bold">Resources:</p>                   
+                </div>
+                <div>
+                    <p class="font-bold">Participate:</p>                   
+                </div>
+                <div>
+                    <p class="font-bold">Other:</p>                   
+                </div>
+            </div>
         </div>
     </div>
 

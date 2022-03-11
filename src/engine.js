@@ -387,21 +387,21 @@ function checkGuess () {
         let letterColor = ''
         let box = row.children[i]
         let letter = currentGuess[i]
-        
+
         let letterPosition = rightGuess.indexOf(currentGuess[i])
         // is letter in the correct guess
         if (letterPosition === -1) {
-            letterColor = 'grey'
+            letterColor = '#787C7E'
         } else {
             // now, letter is definitely in word
             // if letter index and right guess index are the same
             // letter is in the right position 
             if (currentGuess[i] === rightGuess[i]) {
                 // shade green 
-                letterColor = 'green'
+                letterColor = '#6AAA64'
             } else {
                 // shade box yellow
-                letterColor = 'yellow'
+                letterColor = '#C9B458'
             }
 
             rightGuess[letterPosition] = "#"
@@ -410,6 +410,8 @@ function checkGuess () {
         let delay = 250 * i
         setTimeout(()=> {
             box.style.backgroundColor = letterColor
+            box.style.color = '#ffffff'
+            box.style.border = '0px'
             shadeKeyBoard(letter, letterColor)
         }, delay)
     }
