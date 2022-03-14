@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         'firacode': ['Fira Code', 'monospace'],
         'gorditas': ['Gorditas', 'cursive'],
+        'hubballi': ['Hubballi', 'cursive'],
       },
       gridRowStart: {
         '8': '8',
