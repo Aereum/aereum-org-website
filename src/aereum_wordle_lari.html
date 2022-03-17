@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Aereum</title>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Hubballi&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="../dist/output.css">
+</head>
+<body class="bg-gray-900 w-full">
+
+    <div class="flex justify-center">
+        <div class="bg-gray-900 w-[1000px]">
+                <div class="grid grid-cols-16 pb-3 pt-3">
+                    <div class="col-start-7 col-span-2">
+                        <a class="text-2xl text-red-400 font-serif" href="anchor0.html">Unplugged</a>
+                    </div>
+                    <div class="col-start-9 col-span-2">
+                        <a class="text-2xl text-blue-400 font-serif" href="anchor2.html">Whaaaat...?</a>
+                    </div>
+                    <div class="col-start-11 col-span-2">
+                        <a class="text-2xl text-green-500 font-serif" href="anchor3.html">Nerds :)</a>
+                    </div>
+                    <div class="col-start-13 col-span-1">
+                        <a class="text-2xl text-pink-500 font-serif" href="anchor4.html">Adventure \o/</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex justify-center">
+        <div class="bg-amber-50 w-[1000px]">
+
+            <div id="logo" class="flex flex-col items-center pt-20">
+                <h1 class="text-7xl text-red-400 pb-8" style="font-family:'Hubballi';"> Make internet </h1>
+                <div>
+                <div class="flex flex-row w-full">
+                    <div class="w-[100px]">
+                    </div>
+                    <div  id="game-board">
+                    </div> 
+                    <div class="w-[100px]">
+                        <h3 class="bg-amber-300 p-1 mt-1 ml-4 w-fit" id="startgame" onclick="initBoard();" role="button"> <span class="font-bold">Solve</span> </h3>
+                    </div>
+                    
+                    
+                    <!-- <div class="absolute inset-0 flex justify-center items-center z-10">
+                        TESTE
+                    </div> -->
+                    <!-- <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-md">
+                        <div class="md:flex">
+                            <div class="w-full p-3 py-10">
+                                <div class="flex justify-center mt-3"> <span class="text-xl font-medium">I want to give advice</span> </div>
+                            </div>
+                        </div>
+                    </div> -->
+<!-- 
+                    <div
+                        class="fixed hidden inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full"
+                        id="mymodal"
+                    >Teste</div> -->
+
+                </div>
+
+                <div class="bg-blue-100 rounded-lg py-5 px-6 mb-4 text-base text-blue-700 mb-3" role="alert">
+                    A simple primary alert - check it out!
+                </div>
+
+            </div>
+                <h1 class="text-7xl text-red-400 pt-8 pb-8" style="font-family:'Hubballi';"> again! </h1>
+                <div id="keyboard-show" class="keyboard-hidden">
+                    
+                    <div id="keyboard-cont">
+                        <div class="first-row">
+                            <button class="keyboard-button">q</button>
+                            <button class="keyboard-button">w</button>
+                            <button class="keyboard-button">e</button>
+                            <button class="keyboard-button">r</button>
+                            <button class="keyboard-button">t</button>
+                            <button class="keyboard-button">y</button>
+                            <button class="keyboard-button">u</button>
+                            <button class="keyboard-button">i</button>
+                            <button class="keyboard-button">o</button>
+                            <button class="keyboard-button">p</button>
+                        </div>
+                        <div class="second-row">
+                            <button class="keyboard-button">a</button>
+                            <button class="keyboard-button">s</button>
+                            <button class="keyboard-button">d</button>
+                            <button class="keyboard-button">f</button>
+                            <button class="keyboard-button">g</button>
+                            <button class="keyboard-button">h</button>
+                            <button class="keyboard-button">j</button>
+                            <button class="keyboard-button">k</button>
+                            <button class="keyboard-button">l</button>
+                        </div>
+                        <div class="third-row">
+                            <button class="keyboard-button">Del</button>
+                            <button class="keyboard-button">z</button>
+                            <button class="keyboard-button">x</button>
+                            <button class="keyboard-button">c</button>
+                            <button class="keyboard-button">v</button>
+                            <button class="keyboard-button">b</button>
+                            <button class="keyboard-button">n</button>
+                            <button class="keyboard-button">m</button>
+                            <button class="keyboard-button">Enter</button>
+                        </div>
+                    </div>
+                </div>
+                <a class="bg-amber-500 text-2xl m-8 pt-2 pb-2 pl-4 pr-4 rounded-2xl text-amber-50 font-serif" href="anchor0.html">Let's <span class="font-bold">do</span> this!</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="flex justify-center">
+        <div class="bg-white w-[1000px] pt-8">
+            <div class="w-full grid grid-cols-3 gap-4 pl-8 pr-8">
+                <div class="col-start-1 col-span-1">
+                    <div class="flex flex-col w-full">
+                        <img class="w-full" src="../dist/comic_0_1.png">
+                        <h1 class="text-sm text-gray-700 p-3">We are crypto enthusiasts that, in the spirit of Satoshi Nakamoto, believe in <span class="font-bold">freeing digital interactions</span> from third parties interface dependency</h1>
+                    </div>
+                    
+                </div>
+                <div class="col-start-2 col-span-1">
+                    <div class="flex flex-col w-full">
+                        <img class="w-full" src="../dist/comic_0_2.png">
+                        <h1 class="text-sm text-gray-700 p-3">We propose a new digital agreement so that people can <span class="font-bold">interact freely</span>, no single provider in charge of content distribution and format</h1>
+                    </div>
+                </div>
+                <div class="col-start-3 col-span-1">
+                    <div class="flex flex-col w-full">
+                        <img class="w-full" src="../dist/comic_0_3.png">
+                        <h1 class="text-sm text-gray-700 p-3">We have a functioning network built on top of that agreement, the first decentralized crypto powered <span class="font-bold">digital venue for people</span></h1>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="w-full bg-red-400 mt-6 mb-6 p-5">
+                <h1 class="text-white text-xl"> 
+                    Aereum hopes to bring back <span class="font-bold">human values</span> and <span class="font-bold">independence</span> to digital interfaces, 
+                    <span class="font-bold">setting people free</span> to pour innovation, personality and experimentation into their interactions
+                </h1>
+            </div>
+            
+            <div class="pl-6 pr-6 pt-6">
+                <div class="flex flex-row items-center">
+                    <div class="basis-2/5">
+                        <div class="flex flex-row items-end ">
+                            <div class="text-9xl"> <h1 class="align-text-bottom text-red-400 "> 1 </h1> </div>
+                            <div class="text-3xl"> <h1 class="align-text-bottom text-red-400">Interfaces are <span class="font-bold">not</span> neutral </h1></div>
+                        </div>
+                        <h1 class="pt-4 pl-4 text-gray-700"> The character of an interaction is always heavily altered by the interface. </h1>
+                    </div>
+                    <div class="basis-3/5 relative">
+                        <img src="../dist/spotify.png">
+                        <h1 class="absolute top-1/4 left-1/4 text-red-400 w-1/4 p-3 bg-white rounded-lg text-sm"> 
+                            Some interfaces promote <span class="font-bold">uniformity</span> and encourage familiar, popular choices...
+                        </h1>
+                        <h1 class="absolute top-[50%] left-[70%] text-red-400 w-1/4 p-3 bg-white rounded-lg text-sm"> 
+                            ... lacking in warmth and human exchange 
+                        </h1>
+                    </div>
+                </div>
+                <div class="relative flex flex-row justify-center pt-6">
+                    <img class="w-11/12" src="../dist/roughtrade.png"/>
+                    <h1 class="absolute top-[10%] left-[20%] bg-red-400 w-[15%] p-3 text-white rounded-lg text-sm"> 
+                        While others encourage <span class="font-bold">diversity, connection</span>, people’s <span class="font-bold">curiosity</span> and <span class="font-bold">experimentation</span>
+                    </h1>
+                </div>
+                
+                <div class="w-full mt-8 mb-8 pl-8 pr-8">
+                    <h1 class="pb-4 text-gray-700">Shouldn't digital music discovery be at least as surprising and varied as in a record store, 
+                        garage bands and underground singers found by chance, 
+                        maybe pointed out by a bypasser? Unexpected choices leading to unexpected experiences!
+                    </h1>
+                    
+                    <h1 class="pb-4 text-gray-700">
+                        And so with movies, photography, literature... 
+                        <span class="font-bold">How can these seem somehow less varied</span>, colourfull and diverse today, despite the amazing 
+                        reach rendered by the digital medium? 
+                    </h1>
+                    <h1 class="text-gray-700">Interfaces.</h1>
+                </div>
+            
+            <div  class="relative flex flex-row justify-center">
+                <img class="w-11/12" src="../dist/disco.png"/>
+                <h1 class="absolute top-[45%] left-[20px] bg-red-400 w-[25%] p-3 text-white rounded-lg text-sm"> 
+                    We must <span class="font-bold">reclaim interfaces</span> to reclaim human values lost,
+                    depreciated and forgotten by the digital environment.
+                </h1>
+            </div>
+
+            <div class="pl-6 pr-6 pt-16">
+                <div class="flex flex-row items-center">
+                    <div class="basis-2/5">
+                        <div class="flex flex-row items-end ">
+                            <div class="text-9xl"> <h1 class="align-text-bottom text-red-400 "> 2 </h1> </div>
+                            <div class="text-3xl pl-2"> 
+                                <h1 class="align-text-bottom text-red-400"><span class="font-bold">Content</span> over</h1>
+                                <h1 class="align-text-bottom text-red-400">form </h1></div>
+                        </div>
+                        <h1 class="pt-4 pl-4 text-gray-700"> Content should not adjust to fit a format. It must be the other way around.</h1>
+                        <h1 class="pl-4 text-gray-700"> So we propose content exchange through a protocol. :) </h1>
+                    </div>
+
+                    <div class="basis-3/5 relative pl-24">
+                        <img class="h-96" src="../dist/monalisa.png">
+                        <h1 class="absolute top-[25%] left-[55%] text-red-400 w-1/4 p-3 bg-white rounded-lg text-sm"> 
+                            Content sharing adjusted to <span class="font-bold">app/provider</span> frame
+                        </h1>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-12 grid-rows-12 mt-2 pt-4">
+                    <div class="h-96 border col-start-1 col-span-5 row-start-1 row-span-6 overflow-y-clip">
+                        <img  class="w-full" src="../dist/mona1.png"/>
+                    </div>
+                    <div class="h-96 border col-start-6 col-span-7 row-start-1 row-span-6 overflow-y-clip"> 
+                        <img class="w-full" src="../dist/mona2.png"/>
+                    </div>
+                    <div class="h-96 border col-start-6 col-span-3 row-start-6 row-span-6 overflow-y-clip"> 
+                        <img class="w-full" src="../dist/mona3.png"/>
+                    </div>
+                    <div class="h-96 border col-start-1 col-span-5 row-start-7 row-span-6 overflow-y-clip"> 
+                        <img class="w-full" src="../dist/mona4.png"/>
+                    </div>
+                    <div class="h-96 border col-start-9 col-span-6 row-start-7 row-span-6 overflow-y-clip"> 
+                        <img class="w-full" src="../dist/mona6.png"/>
+                    </div>
+                    <div class="h-48 border col-start-6 col-span-4 row-start-10 row-span-3 overflow-y-clip"> 
+                        <img class="h-full" src="../dist/mona5.png"/> 
+                    </div>
+                    <div class="col-start-5 col-span-2 row-start-3 row-span-2">
+                        <div class="font-sans text-white bg-red-400 rounded-lg p-3 text-sm">
+                            Content sharing on a <span class="font-semibold">protocol</span>, 
+                            free from a single app / provider interface
+                        </div>
+                    </div>                   
+                </div>
+            
+                <div class="w-full mt-8 mb-8">
+                        <h1 class="pb-4 text-gray-700"> Long ago people came up with a protocol to make machines communicate with each other. On top of that the internet was born.</h1>
+                        <h1 class="pb-4 text-gray-700"> <span class="font-bold">Aereum proposes a protocol to make humans digitally communicate with each other</span>, no intermediary plataform needed. Ideas free from the dictatorship of provider’s formats. </h1>
+                </div>
+
+                <div class="relative flex flex-row ">
+                    <img class="pl-[200px]" src="../dist/gifts.png"/>
+                    <h1 class="absolute top-[65%] left-[15%] text-white w-1/4 p-3 bg-red-400 rounded-lg text-sm"> 
+                        Content is <span class="font-bold">yours</span> to decide <span class="font-bold">how</span> to share it and whom to share it with! Your ideas, your choices!
+                    </h1>
+                </div>
+
+                <div class="w-full mt-8 mb-8">
+                <h1 class="text-gray-700">
+                    Create content free to circle around and be invented and reinvented. No frame to limit your imagination.
+                </h1>
+                </div>
+            
+            <div class="pl-6 pr-6 pt-16 mt-8">
+                <div class="flex flex-row items-center">
+
+                    <div class="basis-2/5">
+                        <div class="flex flex-row items-end ">
+                            <div class="text-9xl"> <h1 class="align-text-bottom text-red-400 "> 3 </h1> </div>
+                            <div class="text-3xl pl-4"> <h1 class="align-text-bottom text-red-400">Digital stages of a <span class="font-bold">global festival</span></h1></div>
+                        </div>
+                        <h1 class="pt-4 pl-4 text-gray-700"> Aereum protocol enpowers you to take a stage online and be seen by everyone that matters to you, without the need for the intermediary plataforms. </h1>
+                    </div>
+
+                    <div class="basis-8/12 relative flex justify-center">
+                        <img class="h-96" src="../dist/logo.png">
+                        <h1 class="absolute top-[65%] left-[70%] text-red-400 w-1/4 p-3 bg-white rounded-lg text-sm"> 
+                            Today we <span class="font-bold">stumble and adapt</span> to find the right place to interact with our audiences
+                        </h1>
+                    </div>
+                </div>
+
+
+            <div class="grid grid-cols-12 grid-rows-12 mt-2 h-[500px]">
+                <div class="col-start-1 col-span-4 row-start-2 row-span-5 overflow-y-clip">      
+                    <img  class="object-cover" src="../dist/talk.png"/>
+                </div>
+                <div class="col-start-5 col-span-4 row-start-2 row-span-5 overflow-y-clip"> 
+                    <img class="object-cover" src="../dist/speak.png"/>    </div>
+                <div class="col-start-9 col-span-4 row-start-2 row-span-5 overflow-y-clip"> 
+                    <img class="object-cover" src="../dist/share.png"/>    
+                </div>
+                <div class="col-start-1 col-span-5 row-start-6 row-span-6 overflow-y-clip">
+                    <img  class="object-cover" src="../dist/teach.png"/>    
+                </div>
+                <div class="col-start-6 col-span-7 row-start-6 row-span-6  overflow-y-clip">
+                    <img  class="object-cover" src="../dist/exchange.png"/>    
+                </div>
+                
+                <div class="col-start-4 col-span-2 row-start-1 row-span-2 overflow-y-clip">
+                    <div class="h-full flex items-center">
+                    <div class="font-sans text-white bg-red-400 rounded-lg p-3 text-sm"> 
+                        And that’s because we are people... </div>
+                    </div>
+                </div>
+                <div class="col-start-8 col-span-2 row-start-2 row-span-2 overflow-y-clip">
+                    <div class="h-full flex items-center">
+                    <div class="font-sans text-white bg-red-400 rounded-lg p-3 text-sm"> 
+                        ...speak </div>
+                    </div>
+                </div>
+                <div class="col-start-12 col-span-2 row-start-2 row-span-1overflow-y-clip">
+                    <div class="h-full flex items-center">
+                    <div class="font-sans text-white bg-red-400 rounded-lg p-2 text-sm"> 
+                        ...share </div>
+                    </div>
+                </div>
+                <div class="col-start-3 col-span-2 row-start-4 row-span-1overflow-y-clip">
+                    <div class="h-full flex items-center">
+                    <div class="font-sans text-white bg-red-400 rounded-lg p-3 text-sm"> 
+                        and people talk... </div>
+                    </div>
+                </div>
+                <div class="col-start-4 col-span-2 row-start-7 row-span-1 overflow-y-clip">
+                    <div class="h-full flex items-center">
+                    <div class="font-sans text-white bg-red-400 rounded-lg p-3 text-sm"> 
+                        ...teach and learn</div>
+                    </div>
+                </div>
+                
+                <div class="col-start-7 col-span-2 row-start-9 row-span-1 overflow-y-clip">
+                    <div class="h-full flex items-center">
+                    <div class="font-sans text-white bg-red-400 rounded-lg p-3 text-sm"> 
+                        ...exchange </div>
+                    </div>
+                </div>
+            
+            </div>
+            
+            <div class="w-full">
+                <h1 class="pb-4 text-gray-700">
+                    We should have it all in one single digital venue. Why not? When freed from the prision of preset interfaces, interactions may take all and any shapes, audiences flexible to follow the contents they’d like better.
+                </h1>
+                <h1 class="pb-12 text-gray-700">
+                    Stages are the analog image that inspired Aereum’s digital exchange medium. They are native and neutral human interaction grounds, flexible to embrace most types of human interactions. 
+                </h1>
+                </div>
+
+            <div class="h-96 grid grid-cols-12 grid-rows-6 mt-2">
+                <div class="col-start-2 col-span-5 row-start-1 row-span-6 overflow-y-clip">  
+                    <img class="w-full" src="../dist/create.png"/>   
+                </div>
+                <div class="col-start-7 col-span-5 row-start-1 row-span-3 overflow-y-clip">  
+                    <img class="w-full" src="../dist/lego.png"/>   
+                </div>
+                <div class="col-start-7 col-span-5 row-start-4 row-span-3 overflow-y-clip">  
+                    <img class="w-full" src="../dist/children.png"/>   
+                </div>
+                <div class="col-start-1 col-span-2 row-start-5 row-span-1 overflow-y-clip">  
+                    <div class="h-full flex items-center justify-items-center">
+                    <div class="ml-2 font-sans text-white bg-red-400 rounded-lg p-3 text-sm"> 
+                        People create </div>
+                    </div>
+                </div>
+                </div>
+                <div class="w-full mt-8 mb-4 text-gray-700">
+                    <h1>
+                <span class="font-bold">The protocol enpowers you</span> to take your stage online and be seen by the audience that chose to follow you without the intermediary to dictate rules for content format and distribution. Without having to adapt your interaction to your interface!
+                    </h1>    
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="flex justify-center">
+            <a class="bg-red-400 text-2xl m-8 pt-2 pb-2 pl-4 pr-4 rounded-2xl text-white font-serif" href="anchor0.html">Let's <span class="font-bold">do</span> this!</a>
+        </div>
+        
+
+        <div class="w-full bg-blue-400 mt-10 mb-6 p-5">
+            <h1 class="text-white text-xl"> 
+                A set of rules agreed upon by different participants of a network to ensure direct digital communication. That's the <span class="font-bold">protocol</span>, Aereum's protocol. </h1>
+        </div>
+   
+        <div class="pl-8 pr-8">
+            <img src="../dist/comics0_new.png" class="pb-4 pt-8">
+            <img src="../dist/comics1_new.png" class="pb-4">
+            <img src="../dist/comics2_new.png" class="pb-4">
+            <img src="../dist/comics3_new.png" class="pb-4">
+            <img src="../dist/comics4_new.png" class="pb-4">
+            <img src="../dist/comics5_new.png" class="pb-4">
+        </div>
+
+
+        <div class="flex justify-center">
+            <a class="bg-blue-400 text-2xl m-8 pt-2 pb-2 pl-4 pr-4 rounded-2xl text-white font-serif" href="anchor0.html">Let's <span class="font-bold">do</span> this!</a>
+        </div>
+
+        <div class="w-full bg-green-500 mt-6 p-6">
+            <h1 class="text-white text-xl"> 
+                <span class="font-bold">Cryptography</span> technics power protocol rules. An <span class="font-bold">original consensus algorithm</span> ensures the requirements for the social network to function smoothly.
+            </h1>
+        </div>
+
+        <div  class="w-full bg-neutral-700 pt-2 pb-8">
+        <pre>
+        <div  class="relative flex flex-row flex-col justify-center bg-neutral-700 m-8 rounded-lg pb-4 border border-neutral-600">
+            
+            <h2 class="text-slate-500 w-full border-b border-neutral-600 pt-3 pb-3 pl-4 mb-4"> <span class="text-neutral-400"> 145 lines of code (130 sloc) | 1.2 Kb </span></h2>
+
+            <h1 class="text-slate-300 text-1xl font-firacode text-red-200">''</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode text-red-200">Aereum is a <span class="text-green-200">protocol</span> designed to enable mediation-free communication on the web,</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode text-red-200">that is, direct digital interaction between humans. The guidelines presented by</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode text-red-200">the protocol rely both on known <span class="text-green-200">cryptography</span> technics, and an original proof-of-</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode text-red-200">stake <span class="text-green-200">consensus algorithm</span> with <span class="text-green-200">state</span> checksum check.</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode text-red-200"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode text-red-200">On top of the protocol the eponymous peer-to-peer Aereum <span class="text-green-200">network</span> is proposed,</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode text-red-200">comprising unique identification handles for <span class="text-green-200">members</span> and a cryptography powered</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode text-red-200">communication layer inspired by the concept of <span class="text-green-200">stages</span>. A secure channel</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode text-red-200">mechanism is also provided, supported by <span class="text-green-200">ephemeral tokens</span>.</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode text-red-200"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode text-red-200">The processing of network <span class="text-green-200">instructions</span> into <span class="text-green-200">blocks</span> for incorporation into the</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode text-red-200">public chain is moderated by a dedicated <span class="text-green-200">fungible token</span>.</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode text-red-200">''</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode text-red-200"></h1>
+
+            <input type="checkbox" class="accordion" id="1"/>
+            <label for="1" class="accordion">
+                <h1 class="text-slate-300 text-1xl font-firacode"><span class="text-green-200">[+] protocol</span></h1>
+            </label>    
+            <div class="comment">
+                <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+                <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;Direct digital interaction between humans is possible if both a public</h1>
+                <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;identification mechanism for members, and a decentralized communication mean are</h1>
+                <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;provided.</h1>
+                <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+                <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;Aereum proposes that members are uniquely identified by the public key of an</h1>
+                <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;asymmetric cryptographic pair, and a unique handle "@user_name". Valid</h1>
+                <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;cryptographic signature checked against the public key is considered proof of</h1>
+                <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;authorship.</h1>
+                <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+                <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;For direct communication exchange it proposes the sending of messages to a</h1>
+                <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;decentralized blockchain. Content access is managed by encrypting the message</h1>
+                <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;with a cipher formerly associated to a digital stage.</h1>
+                <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+                <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;The protocol covers a range of types of interactions translated into a set of</h1>
+                <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;possible instructions. In addition to the sending of messages, it encompasses</h1>
+                <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;creation of stages, granting of reading, writing and moderation priviledges for</h1>
+                <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;a stage, waivering and annulment of signature priviledges (so-called power of</h1>
+                <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;attorney), creation of a secure channel between members, shuffle of keys for</h1>
+                <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;stage managing, and sponsorship proposals and acceptances.</h1>
+                <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            </div>
+            
+            <input type="checkbox" class="accordion" id="2"/>
+            <label for="2" class="accordion">
+                <h1 class="text-slate-300 text-1xl font-firacode"><span class="text-green-200">[+] network</span></h1>
+            </label>
+            <div class="comment">
+            
+                <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+                <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;Aereum network runs on top of its namasaked protocol, enabling the use of the</h1>
+                <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;Aereum protocol by the participants. To meet communication needs, it must be a</h1>
+                <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;high throughput, low latency, cheap and reliable network.</h1>
+                <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+                <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;The consensus algorithm proposed is scalable to the order of dozens of</h1>
+                <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;instructions per day, per member, globally. The cost estimate is of the order of</h1>
+                <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;US$ 1 cent per thousand instructions processed.</h1>
+                <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+                <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;Network recieves new instructions sent by any member and orders such</h1>
+                <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;instructions into blocks that will be posteriorly incorporated into the</h1>
+                <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;blockchain. Instruction incorporation and state update consist in checking</h1>
+                <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;signatures, sufficiency of fungible token balance on the appropriated wallets,</h1>
+                <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;overall wallet balances, members tokens and handles, stages tokens, sponsorship</h1>
+                <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;proposals and power of attorney priviledges. The last two items are explained in</h1>
+                <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;the instructions section.</h1>
+                <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+                <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;For node synchronisation new candidates stake a predetermined amount of the</h1>
+                <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;network's fungible token and then connect to an existing node to recieve the</h1>
+                <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;current state. After transfer, if the state is correct, candidates can validate</h1>
+                <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;new nodes. Every node is required to publish a proof of state checksum to all</h1>
+                <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;peers on a regular basis. Only nodes providing the correct proof remain valid,</h1>
+                <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;until next check, and so on.</h1>
+                <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+
+        </div>    
+        <input type="checkbox" class="accordion" id="3"/>
+            <label for="3" class="accordion">
+            <h1 class="text-slate-300 text-1xl font-firacode"><span class="text-green-200">[+] cryptography</span></h1>
+            </label>
+            <div class="comment">
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;Cryptography technics adopted by the protocol and network.</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;<span class="font-bold text-slate-200">Hash function:</span> SHA256 hash algorithm as defined in FIPS-180-4. Used in the state</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;checksum processing.</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;<span class="font-bold text-slate-200">Symmetric Cryptography:</span> AEAD cipher mode based on AES-256 encryption. Used for</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;encryption of content published to the blockchain according to Aereum's stage</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;mechanism.</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;<span class="font-bold text-slate-200">Asymmetric Cryptography:</span> ED25519 signature algorithm based on RFC 8032</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;(https://ed25519.cr.yp.to/). Used for network's member identification, for</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;managing priviledges regarding stage's actions and for secure channel</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;communication.</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;<span class="font-bold text-slate-200">Diffie-Hellman secret exchange:</span> X25519 function defined on RFC 7748. The</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;function can either be called on persistent public keys or ephemeral ones. Used</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;to exchange stage's keys for content access, and for moderation or writing</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;privileges.</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+        </div>
+
+        <input type="checkbox" class="accordion" id="4"/>
+        <label for="4" class="accordion">
+            <h1 class="text-slate-300 text-1xl font-firacode"><span class="text-green-200">[+] members</span></h1>
+        </label>
+        <div class="comment">
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;New participants must generate an asymmetric cryptographic pair of keys. To join</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;the network, the member must send a message to a validator node containing: the</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;public key token of the generated pair, an unused handler caption and a JSON</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;with the member\'s information.</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;The JSON file can contain a name, a signed certificate of authenticity and links</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;for static off-chain storage of files. These information can be later altered.</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;Message size accepted by network prevents exchange of large content files, so</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;static links can be referred to by an html hook, pointing to the place these</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;files are stored by a third-party service, or self-hosted.</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;Since all instructions need a wallet with the necessary fungible token balance</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;to be processed by the network, if the new member does not possesses an aero</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;wallet they must find someone willing to afford the "join network" message.</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>        
+        </div>
+
+        <input type="checkbox" class="accordion" id="5"/>
+        <label for="5" class="accordion">
+            <h1 class="text-slate-300 text-1xl font-firacode"><span class="text-green-200">[+] stages</span></h1>
+        </label>
+        <div class="comment">
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;Content access is managed by message encryption, using a mechanism</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;methaphorically referred to as stage (as a reference to its real-life</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;counterpart).</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;To create a stage the member must generate three asymmetric cryptographic key</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;pairs and one symmetric key. Each of the three public keys will be respectively</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;associated with the stage's ownership, moderation and writing priviledges. The</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;cipher will be used for content encryption and shared to allow for reading</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;priviledges.</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;All content published to the network must be assigned to a previously created</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;stage. If the stage creator wishes to grant reading, moderation or writing</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;privileges to a requester, the respective cryptographic key will be exchanged</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;using the Diffie-Hellman algorithm.</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+        </div>
+
+        <input type="checkbox" class="accordion" id="6"/>
+        <label for="6" class="accordion">
+            <h1 class="text-slate-300 text-1xl font-firacode"><span class="text-green-200">[+] ephemeral tokens</span></h1>
+        </label>
+        <div class="comment">
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;To provide a primitive for secure communication within the network, the protocol</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;proposes an instruction for the creation of an ehphemeral token. It provides a</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;transient token, the only type of token with permission to sign messages</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;anonymously.</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;The ephemeral token created will be valid for a finite number of blocks. Through</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;anonymously signed messages two members can negotiate ephemeral keys and then</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;interact anonymously within the network for some time.</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;Anonymity is guaranteed up to the anonymity of the wallets used for payment of</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;the instructions fees.</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+        </div>
+
+        <input type="checkbox" class="accordion" id="7"/>
+        <label for="7" class="accordion">
+        <h1 class="text-slate-300 text-1xl font-firacode"><span class="text-green-200">[+] fungible token</span></h1>
+        </label>
+        <div class="comment">
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;As a reward to network nodes for the processing, validating and broadcasting of</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;information, the protocol proposes a dedicated fungible token, aero. Aero tokens</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;are created at every new block incorporation to the blockchain.</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;To inhibit spams, robots and to protect the network from hoarding of simpler</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;handles, all instructions sent to the network require an amount of aero to be</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;waived by the sender. This fee is also granted to network nodes.</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+        </div>
+
+        <input type="checkbox" class="accordion" id="8"/>
+        <label for="8" class="accordion">
+        <h1 class="text-slate-300 text-1xl font-firacode"><span class="text-green-200">[+] instructions</span></h1>
+        </label>
+        <div class="comment">
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;<span class="font-bold text-slate-200">Join Network:</span> Includes a new member to the network, assigning a unique handle to</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;its public key</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;<span class="font-bold text-slate-200">Update Info:</span> Updates the static information of a network member with a new JSON</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;file</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;<span class="font-bold text-slate-200">Create Stage:</span> Creates a stage with its assigned public key and a description</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;<span class="font-bold text-slate-200">Join Stage:</span> A member requests to become part of an existing stage</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;<span class="font-bold text-slate-200">Accept Join/Moderate/Write Request:</span> Stage owner accepts the request of another</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;member to access/moderate/post content on the referred stage</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;<span class="font-bold text-slate-200">Content:</span> Publishes content to a target existing stage, must be signed with</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;writing key of referred stage</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;<span class="font-bold text-slate-200">Shuffle Audience Keys:</span> Changes an existing stage access, moderation and writing</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;keys</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;<span class="font-bold text-slate-200">Grant Power of Attorney:</span> Grants another member the power to sign instructions on</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;behalf of the author</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;<span class="font-bold text-slate-200">Revoke Power of Attorney:</span> Removes a power of attorney granted by a member</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;<span class="font-bold text-slate-200">Sponsorship Offer:</span> Sponsored content message to be published to a target stage</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;<span class="font-bold text-slate-200">Sponsorship Acceptance:</span> Accepts the Sponsorship Offer message</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;<span class="font-bold text-slate-200">Create Ephemeral Token:</span> Creates transient tokens to provide anonymous</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;communication</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;<span class="font-bold text-slate-200">Secure Channel:</span> Creates a secure channel for communication between members</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+        </div>
+
+        <input type="checkbox" class="accordion" id="9"/>
+        <label for="9" class="accordion">
+            <h1 class="text-slate-300 text-1xl font-firacode"><span class="text-green-200">[+] consensus algorithm</span></h1>
+        </label>
+        <div class="comment">
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;To balance network requirements, the protocol proposes an original proof-of-</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;stake with state checksum as its consensus algorithm. The validating nodes need</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;only to keep record of the network state in order to validate new instructions.</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;An elected node checks the new instructions received against protocol</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;requirements and groups them into a block. The block must be signed by a subset</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;of the remaining nodes from the validating pool.</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;If 2/3 of all signing nodes agree on the newly created block, it is considered</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;definitive and broadcast to interest parties. Nodes are rewarded with newly</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;minted aero and fee collection.</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+        </div>
+
+        <input type="checkbox" class="accordion" id="10"/>
+        <label for="10" class="accordion">
+            <h1 class="text-slate-300 text-1xl font-firacode"><span class="text-green-200">[+] blocks</span></h1>
+        </label>
+        <div class="comment">
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;The network nodes, already state syncronized, receive new instructions that must</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;be ordered into blocks such that no single instruction is duplicated and all</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;instructions of a new block are compatible with the set of instructions in prior</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;blocks.</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;New blocks can be started without having the information about previous block,</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;the specific block from which it is being validated being thus specified. This</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;specific block is required to be a live checkpoint.</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;The vast majority of honest signing members of the network should agree on the</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;content of a new proposed block before it is incorporated by the blockchain.</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+        </div>
+
+        <input type="checkbox" class="accordion" id="11"/>
+        <label for="11" class="accordion">
+            <h1 class="text-slate-300 text-1xl font-firacode"><span class="text-green-200">[+] network state</span></h1>
+        </label>
+        <div class="comment">
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;At any block the state of the network is given by:</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;<span class="font-bold text-slate-200">balances of all wallets with non-zero aero</span></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;<span class="font-bold text-slate-200">tokens and respectively assigned handles for all members</span></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;<span class="font-bold text-slate-200">current ownership, moderation and writing tokens for all stages</span></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;<span class="font-bold text-slate-200">non-expired and non-exercised sponsorship offers</span></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;<span class="font-bold text-slate-200">valid power of attorney grants</span></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;Candidate nodes must syncronize the network state, not entire blockchain. To</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;ensure state syncronization, nodes must periodically publish a proof of correct</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode">&nbsp;&nbsp;&nbsp;&nbsp;checksum for the current state in order to remain in the validating pool.</h1>
+            <h1 class="text-slate-300 text-1xl font-firacode"></h1>
+        </div>
+        </pre>
+        <div class="flex justify-center">
+            <a class="bg-neutral-600 text-1xl m-8 pt-2 pb-2 pl-4 pr-4 rounded-2xl text-slate-300 font-sans border border-slate-400" href="anchor0.html">Let's <span class="font-bold">do</span> this!</a>
+        </div>    
+        </div>
+
+        <div class="w-full bg-pink-600 p-6">
+            <h1 class="text-white text-xl"> 
+                Strangers from distant lands, friends of old... All brought together and united by a <span class="font-bold"> common goal</span>!
+            </h1>
+        </div>
+
+
+        <div class="h-[300px] p-8">
+            <div class="grid grid-cols-4">
+                <div>
+                    <p class="font-bold">Introduction:</p>                   
+                </div>
+                <div>
+                    <p class="font-bold">Resources:</p>                   
+                </div>
+                <div>
+                    <p class="font-bold">Participate:</p>                   
+                </div>
+                <div>
+                    <p class="font-bold">Other:</p>                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>    
+    <script src="engine_lari.js"></script>
+</body>
+</html>
