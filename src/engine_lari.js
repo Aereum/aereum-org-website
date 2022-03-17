@@ -381,6 +381,11 @@ function checkGuess () {
 
     if (!WORDS.includes(guessString)) {
         // toastr.error("Word not in list!")
+        let err = document.getElementById('errwordle')
+        err.innerText = 'Unkown Word'
+        err.classList.remove('hidden')
+        setTimeout(()=> {
+            err.classList.add('hidden');}, 1000)
         return
     }
     
