@@ -273,7 +273,7 @@ const WORDS = [
     'dovey', 'holey', 'cuber', 'amyls', 'podia', 'chino', 'apnea', 'prims', 'lycra', 'johns', 'primo', 'fatwa', 'egger', 'hempy', 'snook', 'hying', 'fuzed', 'barms', 'crink', 'moots', 'yerba',
     'rhumb', 'unarc', 'direr', 'munge', 'eland', 'nares', 'wrier', 'noddy', 'atilt', 'jukes', 'ender', 'thens', 'unfix', 'doggo', 'zooks', 'diddy', 'shmoo', 'brusk', 'prest', 'curer', 'pasts',
     'kelpy', 'bocce', 'kicky', 'taros', 'lings', 'dicky', 'nerdy', 'abend', 'stela', 'biggy', 'laved', 'baldy', 'pubis', 'gooks', 'wonky', 'stied', 'hypos', 'assed', 'spumy', 'osier', 'roble',
-    'rumba', 'biffy', 'pupal']
+    'rumba', 'biffy', 'pupal','geeky']
 
 const VALIDWORDS = [
     'dream', 'party', 'laugh', 'smile', 'dance', 'sound', 'think', 'start', 'shout', 'cheer', 'stand', 'fight', 'shine', 'amuse', 'funny', 'human', 'whole', 'happy', 'fresh', 'brave', 'weird',
@@ -296,7 +296,6 @@ if (initialPos >= rightPos) {
 }
 let rightGuessString = VALIDWORDS[rightPos]
 let initialGuess = VALIDWORDS[initialPos]
-
 
 function startBoard() {
     let board = document.getElementById("game-board");
@@ -373,19 +372,20 @@ function checkGuess () {
     }
 
     if (guessString.length != 5) {
-        // toastr.error("Not enough letters! " + guessString)
-        // let mymodal = document.getElementById("mymodal")
-
+        let err = document.getElementById('lenwordle')
+        err.innerText = 'Too Short'
+        err.classList.remove('hidden')
+        setTimeout(()=> {
+            err.classList.add('hidden');}, 1100)
         return
     }
 
     if (!WORDS.includes(guessString)) {
-        // toastr.error("Word not in list!")
         let err = document.getElementById('errwordle')
         err.innerText = 'Unkown Word'
         err.classList.remove('hidden')
         setTimeout(()=> {
-            err.classList.add('hidden');}, 1000)
+            err.classList.add('hidden');}, 1100)
         return
     }
     
@@ -423,17 +423,27 @@ function checkGuess () {
     }
 
     if (guessString === rightGuessString) {
-        // toastr.success("You guessed right! Game over!")
+        let err = document.getElementById('rightwordle')
+        err.innerText = 'CONGRATS!!! :D \n You guessed right'
+        err.classList.remove('hidden')
+        setTimeout(()=> {
+            err.classList.add('hidden');}, 3000)
         guessesRemaining = 0
         return
+
     } else {
         guessesRemaining -= 1;
         currentGuess = [];
         nextLetter = 0;
 
         if (guessesRemaining === 0) {
-            // toastr.error("You've run out of guesses! Game over!")
-            // toastr.info(`The right word was: "${rightGuessString}"`)
+            let err = document.getElementById('wrongwordle')
+            err.innerText = `Oops! :( \n Game over! \n The word was \n "${rightGuessString}"`
+            err.classList.remove('hidden')
+            setTimeout(()=> {
+                err.classList.add('hidden');}, 5000)
+            guessesRemaining = 0
+            return
         }
     }
 }
